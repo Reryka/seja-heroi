@@ -11,12 +11,13 @@ routes.post('/login',loginController.login);
 //ONG
 routes.get('/ong', ongController.listar);
 routes.post('/ong', ongController.inserir);
+routes.get('/profile', casoService.profile);
 
 //Caso
 routes.get('/caso', casoController.listar);
 routes.post('/caso', casoController.inserir);
 routes.delete('/caso/:id', casoController.excluir);
-routes.get('/caso/recuperarPorOng', casoService.recuperarPorOng);
+
 
 
 module.exports = routes;

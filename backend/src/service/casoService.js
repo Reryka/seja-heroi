@@ -3,7 +3,7 @@ const conexao = require('../database/conexao');
 
 module.exports = {
   
-  async recuperarPorOng(request, response){
+  async profile(request, response){
     const ong_id = request.headers.authorization;
 
     const casos =  await conexao('caso')
